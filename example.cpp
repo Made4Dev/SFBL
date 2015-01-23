@@ -10,7 +10,6 @@ using namespace std;
 b2Body* createCircleBody(b2World* w, b2Vec2 pos){
     b2BodyDef def;
     def.position = pos;
-    def.gravityScale = 0;
     def.type = b2_dynamicBody;
     b2Body* body = w->CreateBody(&def);
 
