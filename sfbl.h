@@ -48,7 +48,7 @@ namespace sfbl{
     class WorldLight
     {
     public:
-        ///add movable ConeLight
+        ///add movable PointLight
         ///\param pointer to the specific light
         ///\param number of rays
         void addAsPointLight(Light*light, sf::Uint16 rays);
@@ -60,7 +60,7 @@ namespace sfbl{
         ///\param color of light
         void addAsPointLight(sf::Uint16 rays, float radius, sf::Vector2f position, sf::Color color);
 
-        ///* add movable ConeLight
+        /// add movable SpotLight
         ///\param pointer to the specific light
         ///\param number of rays
         void addAsSpotLight(Light*light, sf::Uint16 rays);
