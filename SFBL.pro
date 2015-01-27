@@ -19,7 +19,7 @@ unix {
 }
 
 INCLUDEPATH += "pathtoSFML\include"
-DEPENDPATH += "pathtoSFMLinclude"
+DEPENDPATH += "pathtoSFML\include"
 LIBS += -L"pathtoSFML\lib"
 
 CONFIG(release, debug|release): LIBS += -lsfml-audio -lsfml-graphics -lsfml-network -lsfml-window -lsfml-system -lBox2D
