@@ -234,8 +234,6 @@ void sfbl::WorldLight::update(){
 
 void sfbl::WorldLight::render(){
     _render.clear(darkness);
-    sf::RectangleShape rect(sf::Vector2f(_window->getSize().x, _window->getSize().y));
-    rect.setFillColor(sf::Color(10,100,10,255));
     sf::RenderStates states;
     states.shader = &lightShader;
     states.blendMode = sf::BlendAdd;
