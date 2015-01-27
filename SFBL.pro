@@ -18,9 +18,9 @@ unix {
     INSTALLS += target
 }
 
-INCLUDEPATH += "E:\Programming\Language C_C++\C++\SFML-2.2\include"
-DEPENDPATH += "E:\Programming\Language C_C++\C++\SFML-2.2\include"
-LIBS += -L"E:\Programming\Language C_C++\C++\SFML-2.2\lib"
+INCLUDEPATH += "pathtoSFML\include"
+DEPENDPATH += "pathtoSFMLinclude"
+LIBS += -L"pathtoSFML\lib"
 
 CONFIG(release, debug|release): LIBS += -lsfml-audio -lsfml-graphics -lsfml-network -lsfml-window -lsfml-system -lBox2D
 CONFIG(debug, debug|release): LIBS += -lsfml-audio-d -lsfml-graphics-d -lsfml-main-d -lsfml-network-d -lsfml-window-d -lsfml-system-d -lBox2D
