@@ -11,3 +11,5 @@ Current Features:
 Binaries:
 ========
 MinGW 4.9.2 static binaries have been already generated
+
+![image](screenshot.jpg)
