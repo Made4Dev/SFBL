@@ -7,9 +7,7 @@ void main()
 {
     vec2 pos = vec2(gl_FragCoord.x, -gl_FragCoord.y);
     pos.y += height;
-    lightPos -= viewport;
-    float dist = distance(pos, lightPos);
+    float dist = distance(pos, lightPos - viewport);
     float attenuation = max(radius/(dist*30), 0.3);
-    lightColor *= attenuation;
-    gl_FragColor = lightColor*gl_Color;
+    gl_FragColor = lightColor * attenuation * gl_Color;
 }
